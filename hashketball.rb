@@ -199,9 +199,9 @@ def big_shoe_rebounds
   big_shoe_player = " "
   player_rebounds = 0
   
-  gamehash.each do |team, team_info|
+  game_hash.each do |team, team_info|
     team_info[:players].each do |player_info|
-      player_info[:shoe].max
+      if player_info[:shoe].max
     end
   end
        
