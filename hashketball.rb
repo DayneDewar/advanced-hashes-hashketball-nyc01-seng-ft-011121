@@ -152,7 +152,8 @@ end
 
 def team_colors(team)
   team_color = " "
-  game_hash.
+  game_hash.each do |team, team_info|
+    team_info[:colors]
   team_color
 end
       
