@@ -172,9 +172,9 @@ end
 def player_numbers(team_name)
   jersey_numbers = []
   
-  game_hash.each do |k, v|
-    v[:players] do |starting_five|
-     if team_name == [v][:team_name] 
+  game_hash.each do |team, team_info|
+    team_info[:players] do |starting_five|
+     if team_name == team_info[:team_name] 
       jersey_numbers << starting_five[:number]
      end
     end
