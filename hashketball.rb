@@ -134,7 +134,9 @@ count = 0
     elsif string == game_hash[:away][:players][count][:player_name]
       point = game_hash[:away][:players][count][:points]
      end
+     
      count +=1
    end
+return
 # binding.pry
 end
