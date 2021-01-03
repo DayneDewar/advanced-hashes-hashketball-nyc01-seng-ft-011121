@@ -176,6 +176,7 @@ def player_numbers(team_name)
     v[:players] do |starting_five|
      if team_name == [k][:team_name] 
       jersey_numbers << starting_five[:number]
+     end
     end
   end
   jersey_numbers
