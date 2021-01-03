@@ -203,7 +203,7 @@ def big_shoe_rebounds
     team_info[:players].each do |player_info|
         player_info[:shoe].max
         big_shoe_player = player_info[:player_name]
-      end
+      
     end
   end
 big_shoe_player
