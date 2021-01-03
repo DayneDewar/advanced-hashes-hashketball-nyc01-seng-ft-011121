@@ -196,5 +196,6 @@ def player_stats(player)
 end
 
 def big_shoe_rebounds
-  biggest_s
+  big_shoe_player = " "
+  player_rebounds = 0
 end
