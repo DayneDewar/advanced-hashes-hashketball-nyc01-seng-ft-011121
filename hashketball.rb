@@ -131,7 +131,6 @@ def num_points_scored(player)
     team_info[:players].each do |starting_five|
      if [:player_name] == player
        starting_five[:points]
-       
      end
    end
  end
