@@ -150,10 +150,10 @@ def shoe_size(player)
  shoe_size
 end
 
-def team_colors(team)
+def team_colors(team_name)
   team_color = " "
   game_hash.each do |team, team_info|
-    team_info[:colors]
+    team_info[:colors] == team_name
   team_color
 end
       
