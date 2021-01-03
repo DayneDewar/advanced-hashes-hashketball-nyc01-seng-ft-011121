@@ -126,12 +126,15 @@ def game_hash
   }
 end
 
-def num_points_scored(player)
-  game_hash.each do |team, team_info|
-    team_info[:players].each do |starting_five|
-     if starting_five[:player_name] == player
-       return starting_five[:points]
+def num_points_scored(string)
+count = 0 
+   while count < game_hash[:home][:players].length do
+     if string == game_hash[:home][:players][count][:player_name]
+      point = game_hash[:home][:players][count][:points]
+    elsif string == game_hash[:away][:players][count][:player_name]
+      point = game_hash[:away][:players][count][:points]
      end
+     count +=1
    end
- end
+# binding.pry
 end
