@@ -160,7 +160,7 @@ def team_colors(team_name)
   team_color
 end
 
-def team_names
+def team_names (teams)
   puts game_hash[:home][:team_name]
   puts game_hash[:away][:team_name]
 end
